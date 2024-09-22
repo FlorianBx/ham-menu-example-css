@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Hamburger sans JavaScript</title>
-		<link rel="stylesheet" href="css/style.css">
+    <title>Menu Hamburger Simple et Best Practice</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <ul class="menu">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-		<h1>Menu Hamburger sans JavaScript</h1>
-		<p class="info">Basculer en mode mobile pour voir le menu ⚠️ </p>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="hamburger-menu__toggle" class="hamburger-menu__toggle">
+        <label for="hamburger-menu__toggle" class="hamburger-menu__btn">
+            <span class="hamburger-menu__btn-line"></span>
+            <span class="hamburger-menu__btn-line"></span>
+            <span class="hamburger-menu__btn-line"></span>
+        </label>
+        <ul class="hamburger-menu__list">
+            <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Accueil</a></li>
+            <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">À propos</a></li>
+            <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Services</a></li>
+            <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Menu Hamburger Simple et Best Practice</h2>
+    </main>
 </body>
 </html>
