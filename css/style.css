@@ -1,0 +1,88 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+/* MOBILE FIRST */
+.menu-toggle {
+	display: none;
+}
+
+.menu-btn {
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.menu-btn span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 5px 0;
+}
+
+.menu {
+	display: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #f1f1f1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.menu-toggle:checked ~ .menu {
+	display: block;
+}
+
+.menu li {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.menu li:last-child {
+	border-bottom: none;
+}
+
+.menu a {
+	color: #333;
+	text-decoration: none;
+}
+
+.info {
+	display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+	.menu-btn {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: space-between;
+		position: sticky;
+		width: 300px;
+	}
+
+	.menu li {
+		display: inline-block;
+		border-bottom: none;
+		padding: 0;
+	}
+
+	.info {
+		display: block;
+	}
+}
